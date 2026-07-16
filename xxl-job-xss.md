@@ -4,23 +4,23 @@
 
 ![image-20260715233455491](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715233455491.png)
 
-首先创建一个普通用户账号，勾选通用执行器Sample(xxl-job-executor-sample)、AI执行器Sample(xxl-job-executor-sample-ai)选项
+create a regular user account and select the options for the generic executor Sample (xxl-job-executor-sample) and the AI executor Sample (xxl-job-executor-sample-ai)
 
-登录普通用户账号，新增
+Log in to a regular user account -> Add task management
 
-`XssUtil`虽然进行了XSS过滤，但未对`oncopy`、`onmousemove`等事件处理器进行正则匹配，导致触发XSS漏洞。
+Although `XssUtil` performs XSS filtering, it does not perform regular expression matching on event handlers such as `oncopy` and `onmousemove`, resulting in the triggering of XSS vulnerabilities.
 
 ![image-20260715234747279](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715234747279.png)
 
-`author` 参数存在XSS漏洞
+The `author` parameter has an XSS vulnerability
 
 ![image-20260716000749222](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715234747279.png)
 
-insert路径
+insert path
 
 ![image-20260715235633636](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715235705809.png)
 
-xxljobinfo类中的参数
+Parameters in the xxljobinfo class
 
 ![image-20260715235705809](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260716000749222.png)
 
@@ -51,7 +51,7 @@ jobGroup=1&name=qqqq&author=%3Ca+onmousemove%3Dalert(%22xss%22)%3Exss&alarmEmail
 
 ![image-20260716001005267](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260716001005267.png)
 
-当管理员查看任务管理时，可被触发
+When the administrator views task management, malicious code is executed
 
 ![image-20260716001103740](https://github.com/hhhh333/CVE/blob/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260716001103740.png)
 
