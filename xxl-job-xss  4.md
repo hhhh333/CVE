@@ -1,4 +1,4 @@
-# In XXL-JOB versions <=3.5.0, the '/jobgroup/insert' interface's `name` parameter is vulnerable to Cross-Site Scripting (XSS). A string containing malicious JavaScript code can be constructed. When viewing the executor management interface, these codes will be executed, potentially leading to the theft of sensitive information such as cookies.
+# In XXL-JOB versions <= 3.5.0, the `name` parameter of the '/jobgroup/insert' interface is vulnerable to Cross-Site Scripting (XSS) attacks. It is possible to construct a string containing malicious JavaScript code in the executor name field of the executor management - add/edit function point. When viewing the executor management interface, these codes will be executed, potentially leading to the theft of sensitive information (such as cookies).
 
 
 
