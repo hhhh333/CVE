@@ -4,19 +4,19 @@
 
 Although `XssUtil` performs XSS filtering, it does not perform regular expression matching on event handlers such as `oncopy` and `onmousemove`, resulting in the triggering of XSS vulnerabilities.
 
-![image-20260715234747279](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260715234747279.png)
+![image-20260715234747279](https://raw.githubusercontent.com/hhhh333/CVE/refs/heads/picture/image-20260715234747279.png)
 
 The `name` parameter has an XSS vulnerability
 
-![image-20260719215629272](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260719215629272.png)
+![image-20260719215629272](https://raw.githubusercontent.com/hhhh333/CVE/refs/heads/picture/image-20260719215629272.png)
 
 insert or update path
 
-![image-20260719215710292](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260719215710292.png)
+![image-20260719215710292](https://raw.githubusercontent.com/hhhh333/CVE/refs/heads/picture/image-20260719215710292.png)
 
 Parameters in the xxlJobGroup class
 
-![image-20260719215747743](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260719215747743.png)
+![image-20260719215747743](https://raw.githubusercontent.com/hhhh333/CVE/refs/heads/picture/image-20260719215747743.png)
 
 
 
@@ -43,11 +43,11 @@ Priority: u=0
 appname=a1112&name=%3Ca+onmousemove%3Dalert(%22xss%22)%3Exss&addressType=0&addressList=&accessToken=s1111
 ```
 
-![image-20260719214507421](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260719214507421.png)
+![image-20260719214507421](https://raw.githubusercontent.com/hhhh333/CVE/refs/heads/picture/image-20260719214507421.png)
 
 When examining actuator management, malicious code is executed
 
-![image-20260719214623580](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260719214623580.png)
+![image-20260719214623580](https://raw.githubusercontent.com/hhhh333/CVE/refs/heads/picture/image-20260719214623580.png)
 
 The malicious code is executed successfully.
 
