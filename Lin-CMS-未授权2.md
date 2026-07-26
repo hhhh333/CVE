@@ -4,7 +4,7 @@ Vulnerable Class File: src/main/java/io/github/talelin/latticy/controller/v1/Boo
 
 Line 54 of the file uses the GET request method to access the /v1/book route. Without any permission verification, the getBooks() method is triggered, directly invoking the database to query all book details.
 
-![image-20260726230140990](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260726230140990.png)
+![image-20260726230140990](https://github.com/hhhh333/CVE/blob/picture/image-20260726230140990.png)
 
 On line 54 of the file, a GET request is used to access the route `/v1/book`. It is worth noting that this endpoint lacks any form of access control or permission verification. Therefore, it triggers the `getBooks` method, which queries the detailed information of each book based on the `id`. Additionally, the `id` parameter follows a predictable and enumerable pattern. Thus, an attacker can iterate through the `id` values to query information related to each book currently stored in the database.
 
@@ -28,7 +28,7 @@ Priority: u=0
 
 ```
 
-![image-20260726230253455](C:\Users\86133\AppData\Roaming\Typora\typora-user-images\image-20260726230253455.png)
+![image-20260726230253455](https://github.com/hhhh333/CVE/blob/picture/image-20260726230253455.png)
 
 
 
