@@ -8,7 +8,7 @@
 
 `column`参数通过请求参数获取，是可控的，
 
-![image-20260731163202507](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260731163202507.png)
+![image-20260731163202507](https://github.com/hhhh333/CVE/blob/picture/image-20260731163202507.png)
 
 
 
@@ -16,7 +16,7 @@
 
 The SQL main clause of the getAllCount method concatenates column values directly, which poses a SQL injection vulnerability
 
-![image-20260731163634208](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260731163634208.png)
+![image-20260731163634208](https://github.com/hhhh333/CVE/blob/picture/image-20260731163634208.png)
 
 
 
@@ -43,4 +43,4 @@ Priority: u=0, i
 
 Determine its database length through time-delay injection
 
-![image-20260731173307004](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260731173307004.png)
+![image-20260731173307004](https://github.com/hhhh333/CVE/blob/picture/image-20260731173307004.png)
