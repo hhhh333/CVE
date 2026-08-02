@@ -6,11 +6,11 @@ Vulnerable Class File: src/cn/ylcto/book/filter/AdminLoginFilter.java
 
 The 9th line of the file does not cover the path of /pages/back/books/*. Unauthenticated users can access the book addition function.
 
-![image-20260802195550036](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260802195550036.png)
+![image-20260802195550036](https://github.com/hhhh333/CVE/blob/picture/image-20260802195550036.png)
 
 The insert method in src/cn/ylcto/book/servlet/BooksServlet.java allows unauthorized addition of books
 
-![image-20260802195535480](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260802195535480.png)
+![image-20260802195535480](https://github.com/hhhh333/CVE/blob/picture/image-20260802195535480.png)
 
 POC for Sending a Request Without Any Permissions:
 
@@ -36,7 +36,7 @@ Priority: u=0, i
 name=%E6%B5%8B%E8%AF%95&aid=admin&iid=1&note=%E6%B5%8B%E8%AF%95
 ```
 
-![image-20260802195703801](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260802195703801.png)
+![image-20260802195703801](https://github.com/hhhh333/CVE/blob/picture/image-20260802195703801.png)
 
 
 
