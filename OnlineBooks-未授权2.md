@@ -6,11 +6,11 @@ Vulnerable Class File: src/cn/ylcto/book/filter/AdminLoginFilter.java
 
 The 9th line of the file does not cover the path of /pages/back/books/*. Unauthenticated users can access the book addition function.
 
-![image-20260802195550036](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260802195550036.png)
+![image-20260802195550036](https://github.com/hhhh333/CVE/blob/picture/image-20260802195550036.png)
 
 The listSplit method located in src/cn/ylcto/book/servlet/BooksServlet.java allows unauthorized queries of the book list.
 
-![image-20260802200047105](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260802200047105.png)
+![image-20260802200047105](https://github.com/hhhh333/CVE/blob/picture/image-20260802200047105.png)
 
 POC for Sending a Request Without Any Permissions:
 
@@ -33,7 +33,7 @@ Priority: u=0, i
 
 ```
 
-![image-20260802200135446](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260802200135446.png)
+![image-20260802200135446](https://github.com/hhhh333/CVE/blob/picture/image-20260802200135446.png)
 
 
 
