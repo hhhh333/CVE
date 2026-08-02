@@ -1,4 +1,4 @@
-# There is an unauthorized access vulnerability in version 1.0 of OnlineBooks. The AdminLoginFilter does not cover the `/pages/back/books/*` path. Unauthenticated users can access the book addition function and add new books without authorization by exploiting the doCreate method in BooksDAOImpl.java;
+# There is an unauthorized access vulnerability in OnlineBooks version 1.0. The AdminLoginFilter does not cover the '/pages/back/books/*' path. An unauthorized user can access the /pages/back/books/BooksServlet/insertPro interface by exploiting the doCreate method in BooksDAOImpl.java, and gain unauthorized access to the book addition function to add new books;
 
 Vulnerable Class File: src/cn/ylcto/book/filter/AdminLoginFilter.java
 
