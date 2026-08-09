@@ -6,7 +6,7 @@
 
 `src/cn/ylcto/book/servlet/MemberServlet.java`
 
-![image-20260809191932095](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260809191932095.png)
+![image-20260809191932095](https://github.com/hhhh333/CVE/blob/picture/image-20260809191932095.png)
 
 
 
@@ -63,5 +63,5 @@ Generate CSRF proof of concept (POC) based on the data packet
 
 
 
-![image-20260809192433310](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260809192433310.png)
+![image-20260809192433310](https://github.com/hhhh333/CVE/blob/picture/image-20260809192433310.png)
 
