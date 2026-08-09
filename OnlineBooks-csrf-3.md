@@ -6,7 +6,7 @@
 
 `src/cn/ylcto/book/servlet/BooksServlet.java`
 
-![image-20260809194833073](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260809194833073.png)
+![image-20260809194833073](https://github.com/hhhh333/CVE/blob/picture/image-20260809194833073.png)
 
 
 
@@ -62,7 +62,7 @@ Generate CSRF proof of concept (POC) based on the data packet
 
 
 
-![image-20260809195437764](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260809195437764.png)
+![image-20260809195437764](https://github.com/hhhh333/CVE/blob/picture/image-20260809195437764.png)
 
-![image-20260809195456575](C:/Users/86133/AppData/Roaming/Typora/typora-user-images/image-20260809195456575.png)
+![image-20260809195456575](https://github.com/hhhh333/CVE/blob/picture/image-20260809195456575.png)
 
